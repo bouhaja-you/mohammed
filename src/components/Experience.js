@@ -40,23 +40,57 @@ const Experience = () => {
   };
 
   const experiences = [
-    {
-      id: 1,
-      title: "Stagiaire",
-      date: "juin 2024 - sept. 2024 · 4 mois",
-      company: "CNRS",
-      imageUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHWVkPoemGy9A/company-logo_100_100/company-logo_100_100/0/1697807244531/cnrs_logo?e=1740009600&v=beta&t=JaCvM-q1zjOnq76rGhNPz-eQuzqq3f_Ca1z2YaxUNpo",
-      description: "Contribution à un projet de recherche en inspection non-destructive. Développement d'algorithmes et analyse de données."
-    },
-    {
-      id: 2,
-      title: "Data Science Research Collaborator",
-      date: "déc. 2023 - mai 2024 · 6 mois",
-      company: "LaBRI",
-      imageUrl: "https://media.licdn.com/dms/image/v2/C4E0BAQEBh8vL94WjaA/company-logo_100_100/company-logo_100_100/0/1676900739426/laboratoire_bordelais_de_recherche_en_informatique_labri__logo?e=1740009600&v=beta&t=H8FmxBD0LGBFOlKQh7hPecqTRSRnA6EOMOQLZDeLXXU",
-      description: "Recherche en science des données et apprentissage automatique. Collaboration avec une équipe de chercheurs sur des projets innovants."
-    }
-  ];
+  {
+    id: 1,
+    title: "Stagiaire",
+    date: "févr. 2025 - aujourd’hui · 6 mois",
+    company: "Orange · Stage",
+    location: "Lannion, Bretagne, France · Sur site",
+    imageUrl: "http://localhost:3000/Stagiaire.jpeg",
+    description: `Conception et développement de briques logicielles de détection de fraudes. Analyse de données utilisateurs en relation avec les fraudes avec possibilité d'utiliser les outils d'IA générative.`,
+    skills: [
+      "GenAI", "Node.js", "Data Analysis", "Python", "Fraud Detection", "Machine Learning", "Backend Development", "Security", "AI Tools"
+    ]
+  },
+  {
+    id: 2,
+    title: "Développeur d'application mobile et systèmes intelligents",
+    date: "oct. 2024 - janv. 2025 · 4 mois",
+    company: "R3 MOB",
+    location: "Bordeaux, Nouvelle-Aquitaine, France",
+    imageUrl: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=100&q=80",
+    description: `Développement d'une application mobile pour le guidage de stationnement. Intégration des communications C-ITS et optimisation du trafic pour les ZFE.`,
+    skills: [
+      "C-ITS", "Java", "Android", "Mobile Development", "Traffic Optimization", "Smart Systems"
+    ]
+  },
+  {
+    id: 3,
+    title: "Stagiaire",
+    date: "juin 2024 - sept. 2024 · 4 mois",
+    company: "CNRS - Centre national de la recherche scientifique · Stage",
+    location: "Talence, Nouvelle-Aquitaine, France · Sur site",
+    imageUrl: "http://localhost:3000/Stagiaire2.jpeg",
+    description: `Contribution à un projet d'inspection non-destructive (NDI) en collaboration avec des partenaires industriels. Développement de workflows pour le logiciel ATHENA (gestion des données scientifiques), conception d’une interface web, traitement de signaux capteurs (3D laser, ultrasons, THz, thermographie), fusion de données multisensor et application d’algorithmes de machine learning pour la détection de défauts.`,
+    skills: [
+      "Python", "Data Processing", "Signal Analysis", "ATHENA", "3D Laser", "Ultrasound", "Machine Learning", "Non-Destructive Testing", "Multisensor Fusion"
+    ]
+  },
+  {
+    id: 4,
+    title: "Data Science Research Collaborator",
+    date: "déc. 2023 - mai 2024 · 6 mois",
+    company: "Laboratoire Bordelais de Recherche en Informatique (LaBRI)",
+    location: "Talence, Nouvelle-Aquitaine, France",
+    imageUrl: "http://localhost:3000/Data.jpeg",
+    description: `Engagé dans un projet de recherche au LaBRI dans le cadre de mon parcours académique à l'ENSEIRB-MATMECA. Mise en œuvre de stratégies pour la comparaison de matrices de confusion en apprentissage supervisé.`,
+    skills: [
+      "Python", "Machine Learning", "D3.js", "Data Science", "Confusion Matrix", "Research"
+    ]
+  }
+];
+
+  
 
   return (
     <section 

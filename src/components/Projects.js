@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import viruswareImage from './virusware.jpeg';
+import viruswareImage from '../assets/virusware.jpeg';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -31,52 +31,93 @@ const Projects = () => {
 
   const projects = [
   {
-    title: "🚀 VirusWare : Plateforme de détection de malware innovante",
-    description: `
-      VirusWare offre la possibilité :
-      ✅ D’analyser des fichiers pour détecter les malwares
-      ✅ D’afficher les résultats en temps réel
-      ✅ De gérer l’historique des analyses
-
-      Un projet alliant cybersécurité et intelligence artificielle pour une détection plus fiable !
-    `,
-    date: "Mai 2024 - Aujourd'hui",
-    imageUrl: viruswareImage,
-    skills: ["JavaScript", "HTML", "Python", "Machine Learning", "Cybersecurity"]
+    title: "Malware detection using machine learning",
+    date: "Mai 2024 - Sept. 2024",
+    description: `Passionné par la cybersécurité et l'IA, je travaille sur un projet de détection de malwares utilisant des techniques de machine learning. En analysant des ensembles de données de signatures de malwares et de comportements suspects, j'explore des algorithmes avancés comme les forêts aléatoires et les réseaux de neurones. Bien que le modèle soit prometteur, il nécessite encore des améliorations pour atteindre une efficacité optimale.`,
+    skills: [
+      "Cybersécurité",
+      "Intelligence artificielle (IA)",
+      "Réseaux de neurones artificiels",
+      "Python",
+      "Traitement des données",
+      "Analyse des logiciels malveillants",
+      "Détection de logiciels malveillants"
+    ]
   },
   {
-    title: "🎓 UdemFree : Cours Udemy 100% gratuits",
-    description: `
-      UdemFree est une application web développée avec Django qui récupère automatiquement 
-      les cours Udemy disponibles avec des coupons de réduction à 100%.
-
-      Idéal pour les étudiants cherchant à apprendre gratuitement !
-    `,
-    date: "Avril 2024 - Aujourd'hui",
-    imageUrl: "https://images.unsplash.com/photo-1555435026-b1e6f7a23780?auto=format&fit=crop&w=1470&q=80",
-    skills: ["Django", "Python", "Web Scraping", "HTML", "CSS"]
+    title: "Implementing Strategies for Confusion Matrix Comparison in Supervised Learning",
+    date: "Déc. 2023 - Mai 2024",
+    description: `Engaged in a research project at LaBRI as part of my academic journey at ENSEIRB-MATMECA. Implementing Strategies for Confusion Matrix Comparison in Supervised Learning.`,
+    skills: ["Machine Learning", "JavaScript", "D3.js", "Python"]
   },
   {
-    title: "📖 Novel Reader : Lecture de romans en arabe",
-    description: `
-      Plateforme de lecture en ligne de novels (romans), avec organisation par chapitres 
-      et support pour les textes en arabe. Backend réalisé avec Django.
-    `,
-    date: "Mars 2024 - Avril 2024",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1470&q=80",
-    skills: ["Django", "Python", "HTML", "CSS", "Gestion de contenu"]
+    title: "Note de synthèse (Informatique Quantique)",
+    date: "Févr. 2024 - Mai 2024",
+    description: `Animée par ma passion pour le domaine quantique et la sécurité, j'ai collaboré en binôme pour rédiger une note de synthèse sur un article scientifique portant sur les algorithmes quantiques. Nous avons conçu des circuits quantiques et évalué l'efficacité de l'algorithme de Shor avec Qiskit (IBM).`,
+    skills: ["Qiskit", "Informatique quantique"]
   },
   {
-    title: "🌐 Portfolio Personnel",
-    description: `
-      Mon portfolio professionnel développé avec React.js, responsive et moderne, 
-      présentant mes projets, compétences et parcours académique.
-    `,
-    date: "Février 2024 - Mars 2024",
-    imageUrl: "https://images.unsplash.com/photo-1521790945508-bf2a36314e85?auto=format&fit=crop&w=1470&q=80",
-    skills: ["React.js", "Tailwind CSS", "JavaScript", "Frontend"]
+    title: "Projet de robotique",
+    date: "Mars 2024 - Mai 2024",
+    description: `Engagé dans un projet de robotique, j'ai contribué à l'implémentation d'un algorithme en Python permettant à notre robot de se déplacer de manière autonome et à distance.`,
+    skills: ["Robotique", "Python"]
+  },
+  {
+    title: "User-Space Threading Library (C Language)",
+    date: "Mars 2024 - Mai 2024",
+    description: `Développement d'une bibliothèque de threads en espace utilisateur en langage C.`,
+    skills: ["C"]
+  },
+  {
+    title: "Web Application Development for Student Carpooling",
+    date: "Oct. 2023 - Déc. 2023",
+    description: `Développement d'une application web de covoiturage étudiant.`,
+    skills: ["SQL", "PhpMyAdmin", "XAMPP"]
+  },
+  {
+    title: "The game of the amazons",
+    date: "Févr. 2023 - Mai 2023",
+    description: `Implémentation du jeu des Amazones en langage C, un jeu abstrait à deux joueurs sur plateau.`,
+    skills: ["C"]
+  },
+  {
+    title: "Tower Defense Game Development (TypeScript, JavaScript)",
+    date: "Mars 2023 - Mai 2023",
+    description: `Développement d'un jeu Tower Defense en TypeScript et JavaScript.`,
+    skills: ["TypeScript", "JavaScript"]
+  },
+  {
+    title: "Airfoil Refinement and Modelling, Pressure Mapping (Python)",
+    date: "Avr. 2023",
+    description: `Projet de modélisation et affinage de profils aérodynamiques, avec cartographie de pression.`,
+    skills: ["Python"]
+  },
+  {
+    title: "Image Compression using SVD Factorisation (Python)",
+    date: "Mars 2023",
+    description: `Compression d'images par factorisation SVD.`,
+    skills: ["Python"]
+  },
+  {
+    title: "Mansuba Game Development (C Language)",
+    date: "Oct. 2022 - Janv. 2023",
+    description: `Projet de jeu basé sur une version modifiée du jeu chinois Mansuba.`,
+    skills: ["C"]
+  },
+  {
+    title: "TIPE : Quantum-Resistant ECC: Design and Evaluation",
+    date: "Déc. 2021 - Juin 2022",
+    description: `Développement d’un algorithme de chiffrement/déchiffrement basé sur la cryptographie sur courbes elliptiques, et évaluation de sa résistance aux attaques quantiques.`,
+    skills: ["Informatique quantique", "ECC", "Cryptographie à clé publique"]
+  },
+  {
+    title: "Smart Intersections - Sécurité routière et signalisation intelligente à Bordeaux",
+    date: "",
+    description: `Développement d’une application Android utilisant les données ouvertes pour améliorer la sécurité routière aux intersections critiques de Bordeaux.`,
+    skills: ["Applications mobiles", "Développement Android", "Android Studio", "Firebase", "Google Cloud Platform (GCP)"]
   }
 ];
+
 
   return (
     <section 
@@ -97,53 +138,44 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div 
-          variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              whileHover={{ y: -5 }}
-              className="group"
-            >
-              <div className="h-full bg-white dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 group-hover:shadow-xl transition-all duration-300">
-                {/* Project Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <span className="text-white font-medium">{project.date}</span>
-                  </div>
-                </div>
+<motion.div 
+  variants={containerVariants}
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+>
+  {projects.map((project, idx) => (
+    <motion.div
+      key={idx}
+      variants={itemVariants}
+      className="flex flex-col h-full bg-white dark:bg-gray-800/80 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl"
+    >
+      {/* Contenu principal */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+          {project.title}
+        </h3>
 
-                {/* Project Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                  
-                  {/* Skills Tags */}
-                  <div className="mt-4">
-                    <div className="flex flex-wrap gap-2">
-                      {project.skills.map((skill, idx) => (
-                        <span
-                          key={idx}
-                          className="text-xs font-medium px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+        <p className="text-gray-600 dark:text-gray-300 mb-4 whitespace-pre-line flex-grow">
+          {project.description}
+        </p>
+
+        {/* Tags de compétences */}
+        <div className="mt-auto">
+          <div className="flex flex-wrap gap-2">
+            {project.skills.map((skill, idx) => (
+              <span
+                key={idx}
+                className="text-xs font-medium px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</motion.div>
+
       </motion.div>
     </section>
   );

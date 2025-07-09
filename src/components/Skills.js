@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faPython, faJs, 
-  faHtml5, faCss3Alt, faReact, faGitAlt,  
-  faNodeJs, faDocker 
-} from '@fortawesome/free-brands-svg-icons';
+ import { faPython, faJs, faNodeJs, faJava, faPhp, faHtml5, faCss3Alt, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faCloud, faLock, faMobileAlt, faDatabase, faBrain, faProjectDiagram, faCogs, faMicrochip, faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 import { faUserTie } from '@fortawesome/free-solid-svg-icons';
 const SkillBar = ({ skill, percentage, icon, variants }) => {
   return (
@@ -70,15 +68,30 @@ const ProgrammingSkills = () => {
     }
   };
 
-  const skills = [
+
+const skills = [
   { skill: 'Python', percentage: 90, icon: faPython },
   { skill: 'Django', percentage: 85, icon: faPython },
+  { skill: 'JavaScript', percentage: 75, icon: faJs },
+  { skill: 'Node.js', percentage: 70, icon: faNodeJs },
+  { skill: 'Java', percentage: 70, icon: faJava },
+  { skill: 'PHP', percentage: 65, icon: faPhp },
   { skill: 'HTML5', percentage: 85, icon: faHtml5 },
   { skill: 'CSS3', percentage: 80, icon: faCss3Alt },
-  { skill: 'JavaScript', percentage: 50, icon: faJs },
   { skill: 'Git & GitHub', percentage: 75, icon: faGitAlt },
-  { skill: 'Leadership', percentage: 60, icon: faUserTie }, // Icône générique pour leadership
+  { skill: 'SQL', percentage: 75, icon: faDatabase },
+  { skill: 'Firebase', percentage: 60, icon: faCloud },
+  { skill: 'Cybersecurity', percentage: 70, icon: faLock },
+  { skill: 'Machine Learning', percentage: 80, icon: faBrain },
+  { skill: 'Informatique Quantique (Qiskit)', percentage: 60, icon: faProjectDiagram },
+  { skill: 'Robotique', percentage: 65, icon: faMicrochip },
+  { skill: 'Développement Mobile', percentage: 75, icon: faMobileAlt },
+  { skill: 'Cloud Computing (GCP)', percentage: 60, icon: faCloud },
+  { skill: 'Backend', percentage: 70, icon: faCogs },
+  { skill: 'Détection de fraudes', percentage: 60, icon: faLock },
+  { skill: 'Web Scraping', percentage: 65, icon: faGlobe }
 ];
+
 
 
   return (

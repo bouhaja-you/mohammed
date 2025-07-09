@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import image1 from './1.jpg';
+import image1 from '../assets/me.jpeg';
 
 const ProfileHeader = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -62,10 +62,10 @@ const ProfileHeader = () => {
             }}
           >
             <p className="text-gray-900 text-2xl sm:text-3xl font-bold leading-tight dark:text-white">
-              Youssef Bouhaja
+              Mohammed Bouhaja
             </p>
             <p className="text-indigo-600 dark:text-indigo-400 text-sm sm:text-base mt-2">
-              Étudiant ENSA Khénitra | Passionné par l’IA et le Machine Learning | Web Developer 
+              Développement Logiciel | Passionné par la Cybersécurité (1% THM) et l'Informatique Quantique | CTF Player
             </p>
             
             {/* Social Icons */}
@@ -77,7 +77,7 @@ const ProfileHeader = () => {
               }}
             >
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/mohammed-bouhaja-4b5b9619b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xl"
@@ -94,7 +94,7 @@ const ProfileHeader = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/mbouhaja02"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-500 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 text-xl"

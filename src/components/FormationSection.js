@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import ensa_logo from './ensa.jpeg';
-import ibn_khatib from './ibnlkhatib.jpeg'
+import enseirbMatmeca_logo from '../assets/enseirbMatmeca_logo.jpeg';
+import cpgeMoulayYoussef_logo from '../assets/cpgeMoulayYoussef_logo.jpeg'
 
 const FormationSection = () => {
   const ref = useRef(null);
@@ -41,25 +41,26 @@ const FormationSection = () => {
       }
     }
   };
-
-  const formations = [
+const formations = [
   {
     id: 1,
-    logo: (ensa_logo),
-    institution: "École Nationale des Sciences Appliquées - Kénitra",
-    diplome: "Ingénierie",
-    periode: "sept. 2024 - sept. 2024",
-    competences: "Développement logiciel, Algorithmique, Systèmes embarqués"
+    logo: enseirbMatmeca_logo, // variable ou import correspondant au logo ENSEIRB-MATMECA
+    institution: "ENSEIRB-MATMECA",
+    diplome: "Diplôme d'ingénieur, Informatique",
+    periode: "2022 - 2025",
+    competences: "Ingénierie"
   },
   {
     id: 2,
-    logo: (ibn_khatib),
-    institution: "Lycée Lyssane Dine Bno Lkhatib Salé",
-    diplome: "Baccalauréat Sciences Mathématiques B",
-    periode: "janv. 2023 - juin 2024",
-    competences: "Mathématiques, Physique, Sciences informatiques"
-  }
+    logo: cpgeMoulayYoussef_logo, // variable/import pour logo CPGE Moulay Youssef
+    institution: "CPGE Moulay Youssef",
+    diplome: "MP*",
+    periode: "sept. 2020 - juil. 2022",
+    competences: ""
+  },
+
 ];
+
 
 
   return (

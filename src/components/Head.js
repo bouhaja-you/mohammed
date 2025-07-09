@@ -3,10 +3,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, XMarkIcon, MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 
 const user = {
-  name: 'Youssef Bouhaja',
-  email: 'youssef.bouhaja@uit.ac.ma',
+  name: 'Mohammed Bouhaja',
+  email: 'mohamedbouhaja106@gmail.com',
   imageUrl:
-  'https://cauxhy.github.io/myportfoliew/static/media/1000008938.e4b6e77ddd2f01f8a336.png'
+  'http://localhost:3000/me.jpeg'
 };
 
 const navigation = [
@@ -84,7 +84,7 @@ export default function ModernNavigation() {
                   <div className="shrink-0 flex items-center">
                     {/* Logo or brand name here */}
                     <span className={`text-lg font-bold ${scrolled ? 'text-indigo-600 dark:text-indigo-400' : 'text-indigo-500 dark:text-white'} transition-colors duration-300`}>
-                      YB
+                      MB
                     </span>
                   </div>
                   <div className="hidden md:block">

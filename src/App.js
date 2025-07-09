@@ -37,14 +37,7 @@ function App() {
         >
           <FormationSection/>
         </motion.div>
-        {/*
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <Experience/>
-        </motion.div>*/}
+
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +52,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
         >
-          <Certificates/>
+          <Experience/>
         </motion.div>
 
         <motion.div
